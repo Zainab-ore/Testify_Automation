@@ -1,0 +1,27 @@
+
+name: GitHub Access Demo
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match the branch you want to trigger the workflow for
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8  # Adjust the Python version as needed
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # If you have a requirements.txt file
+
+      - name: Run Python script
+        run: python main.py
