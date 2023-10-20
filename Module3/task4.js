@@ -1,2 +1,7 @@
-alert('HELLO WORLD!')
-// Task for HTML+js alert('HELLO WORLD!')
+
+//This alert that shows Hello, world! on the browser
+
+console.log('Hello, world!')
+
+//alert('Hello, world!')
+
