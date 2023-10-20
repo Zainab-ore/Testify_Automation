@@ -1,12 +1,6 @@
-// TASK FOR ODD OR EVEN
+// Task to displaythe current day of the week
+const day = "Thursday";
+const position = 4;
+const output = "Today is " +day+ ". It is the " +position+ "th day of the week. "
 
-const number =100%2;
-
-if (number===0) //if the statement is true
-{
-console.log("The number is a even " +typeof(number)) //Print even number
-}
-else
-    {
-    console.log("The number is a odd " +typeof(number))  // prints odd number
-    }
+console.log(output);

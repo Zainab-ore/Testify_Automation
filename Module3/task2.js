@@ -1,4 +1,5 @@
 // javascript funfacts
+
 /*
 JavaScript took just 10 days to develop.
 JavaScript was probably named after Java.
