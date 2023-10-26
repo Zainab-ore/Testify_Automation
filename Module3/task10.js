@@ -4,6 +4,6 @@ function calculateAreaOfRectangle(length, width) {
   }
   
 
-  const area = calculateAreaOfRectangle(10, 14);
+  const area = calculateAreaOfRectangle(140, 104);
   console.log("The area of the rectangle is: " + area);
   
