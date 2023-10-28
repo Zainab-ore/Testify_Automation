@@ -7,7 +7,5 @@ for (let number=1; number<=20; number++)
         // print all odd numbers
         console.log(number+ " is an odd number")
     }
-   else{
-    console.log(number+ " is an even number")
-   }
+   
 }
