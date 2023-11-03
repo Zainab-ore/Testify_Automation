@@ -40,11 +40,11 @@ const books = [
   
   // Using a for-loop to log books with reading status set to true
   for (let i = 0; i < books.length; i++) {
-    if (books[i].reading) {
-      console.log(`Book Title: ${books[i].title}`);
-      console.log(`Description: ${books[i].description}`);
-      console.log(`Number of Pages: ${books[i].numberOfPages}`);
-      console.log(`Author: ${books[i].author}`);
+    if (books[i].reading === true) {
+      console.log("Book Title:" + books[i].title);
+      console.log("Description:" + books[i].description);
+      console.log("Number of Pages:" + books[i].numberOfPages);
+      console.log("Author:" + books[i].author);
       console.log("Reading: Yes");
       console.log(" ");
 

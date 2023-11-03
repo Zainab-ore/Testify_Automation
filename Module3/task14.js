@@ -4,14 +4,19 @@ const books = {
     numberOfPages: 9990,
     author: "Author X",
     reading: true,
-    toggleReadingStatus: function () {
-      this.reading = ! this.reading; // Toggle the reading status
-      console.log(`Reading status for "${this.title}" is now ${this.reading ? 'in progress' : 'not started'}.`);
+
+    toggleReadingStatus: function () 
+    {
+     if(books.reading===true)
+     {
+      books.reading===false;
+     }
     }
   };
   
- 
-  console.log(`Initial reading status: ${books.reading ? 'started' : 'not started'}`);
   books.toggleReadingStatus();
-  console.log(`Updated reading status: ${books.reading ? 'started' : 'not started'}`);
+
+  console.log("The status, of my book reading is currently: " + books.reading + " :for a reading status");
+  
+
   
