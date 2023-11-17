@@ -154,7 +154,8 @@
 							"\r",
 							"pm.test(\"Status code is 200 for GET request\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"postman.setNextRequest(null)"
 						],
 						"type": "text/javascript"
 					}
