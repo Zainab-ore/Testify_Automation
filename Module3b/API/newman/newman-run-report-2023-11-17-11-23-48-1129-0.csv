@@ -1,0 +1,11 @@
+iteration,collectionName,requestName,method,url,status,code,responseTime,responseSize,executed,failed,skipped,totalAssertions,executedCount,failedCount,skippedCount
+"1","Testify","Task3","GET","https://simple-books-api.glitch.me/books","OK","200","1477","417","Test for id, Test for name, Test for type, Status code is 200 for GET request",,,"4","4","0","0"
+"1","Testify","Task4","GET","https://simple-books-api.glitch.me/books/1","OK","200","1432","161","Test for id, Test for name, Status code is 200 for GET request",,,"3","3","0","0"
+"1","Testify","Get Order","GET","https://simple-books-api.glitch.me/orders/7XZTKY1EykA02cxE9xA5_","OK","200","1574","181","Test for id, Test for name, Status code is 200 for GET request",,,"3","3","0","0"
+"1","Testify","Get Order Copy","PATCH","https://simple-books-api.glitch.me/orders/-t-TEPj8jaKfSwAgCj5Sa","No Content","204","1553","0",,,,"0","0","0","0"
+"1","Testify","get orders","POST","https://simple-books-api.glitch.me/orders","Created","201","1439","50",,,,"0","0","0","0"
+"1","Testify","Generate token","POST","https://simple-books-api.glitch.me/api-clients/","Conflict","409","624","65",,,,"0","0","0","0"
+"1","Testify","googleSearch","GET","google.com?q=Hammed oreoluwa","OK","200","549","19332","Status code is 200 OK for GET request",,,"1","1","0","0"
+"1","Testify","TASK2-i","GET","https://reqres.in/api/users?page=2","OK","200","846","1030","Status code is 200 OK for GET request",,,"1","1","0","0"
+"1","Testify","TASK2_ii","POST","https://reqres.in/api/users","Created","201","296","51","Status code is 201 Created for POST request",,,"1","1","0","0"
+"1","Testify","TASK2_iii","DELETE","https://reqres.in/api/users/2","No Content","204","218","0","Status code is 204 No Content for DELETE request",,,"1","1","0","0"

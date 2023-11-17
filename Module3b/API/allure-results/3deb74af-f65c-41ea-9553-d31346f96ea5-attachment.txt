@@ -1,0 +1,1 @@
+{"id":1,"name":"The Russian","author":"James Patterson and James O. Born","isbn":"1780899475","type":"fiction","price":12.98,"current-stock":12,"available":true}
