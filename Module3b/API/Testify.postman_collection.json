@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "e34cdc0f-ef5c-42c1-8596-a39bfd59b6a4",
+		"name": "Testify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19435219"
+	},
+	"item": [
+		{
+			"name": "Task3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							"pm.test(\"Test for id\",function(){\r",
+							"pm.expect(jsonData[4].id).to.eql(5);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for name\",function(){\r",
+							"pm.expect(jsonData[4].name).to.eql(\"Untamed\");\r",
+							"});\r",
+							"pm.test(\"Test for type\",function(){\r",
+							"pm.expect(jsonData[4].type).to.eql(\"non-fiction\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200 for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BookBaseUrl}}/books",
+					"host": [
+						"{{BookBaseUrl}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//get a book with BookID 1\r",
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							"pm.test(\"Test for id\",function(){\r",
+							"pm.expect(jsonData[0].id).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for name\",function(){\r",
+							"pm.expect(jsonData[0].name).to.eql(\"The Russian\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200 for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BookBaseUrl}}/books/:bookId",
+					"host": [
+						"{{BookBaseUrl}}"
+					],
+					"path": [
+						"books",
+						":bookId"
+					],
+					"variable": [
+						{
+							"key": "bookId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task4i",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//get a book with BookID 1\r",
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							"pm.test(\"Test for id\",function(){\r",
+							"pm.expect(jsonData[0].id).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for name\",function(){\r",
+							"pm.expect(jsonData[0].name).to.eql(\"The Russian\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200 for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BookBaseUrl}}/books/:bookId",
+					"host": [
+						"{{BookBaseUrl}}"
+					],
+					"path": [
+						"books",
+						":bookId"
+					],
+					"variable": [
+						{
+							"key": "bookId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "googleSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test for GET request\r",
+							"pm.test(\"Status code is 200 OK for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"var template = `\r",
+							"<div style=\"font-size: 20px; text-align: center;\">\r",
+							"    <h1>Google Homepage</h1>\r",
+							"</div>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return { response: pm.response.text() };\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "google.com?q=Hammed oreoluwa",
+					"host": [
+						"google",
+						"com"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Hammed oreoluwa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK2-i",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test for GET request\r",
+							"pm.test(\"Status code is 200 OK for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PMBASEURL}}/get",
+					"host": [
+						"{{PMBASEURL}}"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK2_ii",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test for POST request\r",
+							"pm.test(\"Status code is 201 Created for POST request\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{rqbaseurl}}/api/users",
+					"host": [
+						"{{rqbaseurl}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK2_iii",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test for DELETE request\r",
+							"pm.test(\"Status code is 204 No Content for DELETE request\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "name",
+			"value": "The Russian",
+			"type": "string"
+		}
+	]
+}
