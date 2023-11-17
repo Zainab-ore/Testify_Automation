@@ -28,7 +28,9 @@
 							"\r",
 							"pm.test(\"Status code is 200 for GET request\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							"postman.setNextRequest('plc orders')"
 						],
 						"type": "text/javascript"
 					}
@@ -243,7 +245,7 @@
 			"response": []
 		},
 		{
-			"name": "get orders",
+			"name": "plc orders",
 			"event": [
 				{
 					"listen": "test",
@@ -458,7 +460,7 @@
 							"pm.test(\"Status code is 204 No Content for DELETE request\", function () {\r",
 							"    pm.response.to.have.status(204);\r",
 							"});\r",
-							""
+							"postman.setNextRequest(null)"
 						],
 						"type": "text/javascript"
 					}
