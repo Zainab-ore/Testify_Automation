@@ -1,0 +1,1 @@
+{"id":"7XZTKY1EykA02cxE9xA5_","bookId":1,"customerName":"John","createdBy":"2b11a488bde34943cbe1daf8c5733003208359a72977cc034b92de3a10199e5e","quantity":1,"timestamp":1700221011925}
