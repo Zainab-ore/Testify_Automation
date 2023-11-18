@@ -112,12 +112,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://simple-books-api.glitch.me/books/:bookId",
-					"protocol": "https",
+					"raw": "{{base}}/books/:bookId",
 					"host": [
-						"simple-books-api",
-						"glitch",
-						"me"
+						"{{base}}"
 					],
 					"path": [
 						"books",
@@ -184,12 +181,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://simple-books-api.glitch.me/orders/:orderId",
-					"protocol": "https",
+					"raw": "{{base}}/orders/:orderId",
 					"host": [
-						"simple-books-api",
-						"glitch",
-						"me"
+						"{{base}}"
 					],
 					"path": [
 						"orders",
@@ -371,108 +365,6 @@
 						}
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "TASK2-i",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "d0b944b7-ff21-44e0-ab13-cb740a492331",
-						"exec": [
-							"// Test for GET request\r",
-							"pm.test(\"Status code is 200 OK for GET request\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "599e4959-6e76-4f46-afb2-095845c1838a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{rqbaseurl}}/api/users?page=2",
-					"host": [
-						"{{rqbaseurl}}"
-					],
-					"path": [
-						"api",
-						"users"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "2"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "TASK2_ii",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
-						"exec": [
-							"// Test for POST request\r",
-							"pm.test(\"Status code is 201 Created for POST request\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "f7d5e7f8-a8fe-43e3-b98b-b196bce0e39d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": "{{rqbaseurl}}/api/users"
-			},
-			"response": []
-		},
-		{
-			"name": "TASK2_iii",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "688c29b7-74c3-4e17-a0bf-07e5e93fb9da",
-						"exec": [
-							"// Test for DELETE request\r",
-							"pm.test(\"Status code is 204 No Content for DELETE request\", function () {\r",
-							"    pm.response.to.have.status(204);\r",
-							"});\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "83c8b006-2dac-40fd-8559-8a68aae9bebc",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": "{{rqbaseurl}}/api/users/2"
 			},
 			"response": []
 		}
