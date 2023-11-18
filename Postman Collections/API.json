@@ -58,7 +58,7 @@
 						}
 					}
 				},
-				"url": "https://simple-books-api.glitch.me/books"
+				"url": "{{base}}/books"
 			},
 			"response": []
 		},
