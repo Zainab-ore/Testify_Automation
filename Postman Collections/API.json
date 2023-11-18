@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Task3",
+			"name": "Get all books",
 			"event": [
 				{
 					"listen": "test",
@@ -63,7 +63,7 @@
 			"response": []
 		},
 		{
-			"name": "Task4",
+			"name": "Single book",
 			"event": [
 				{
 					"listen": "test",
@@ -235,7 +235,7 @@
 						}
 					}
 				},
-				"url": "{{base}}orders/-t-TEPj8jaKfSwAgCj5Sa"
+				"url": "{{base}}/orders/-t-TEPj8jaKfSwAgCj5Sa"
 			},
 			"response": []
 		},
