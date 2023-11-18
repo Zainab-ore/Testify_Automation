@@ -400,11 +400,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
-					"protocol": "https",
+					"raw": "{{rqbaseurl}}/api/users?page=2",
 					"host": [
-						"reqres",
-						"in"
+						"{{rqbaseurl}}"
 					],
 					"path": [
 						"api",
@@ -445,7 +443,7 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"url": "https://reqres.in/api/users"
+				"url": "{{rqbaseurl}}/api/users"
 			},
 			"response": []
 		},
@@ -455,13 +453,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "85588d03-22d0-43e6-84f2-80c73f6feaf3",
+						"id": "688c29b7-74c3-4e17-a0bf-07e5e93fb9da",
 						"exec": [
 							"// Test for DELETE request\r",
 							"pm.test(\"Status code is 204 No Content for DELETE request\", function () {\r",
 							"    pm.response.to.have.status(204);\r",
 							"});\r",
-							"postman.setNextRequest(null)"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -474,7 +472,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "https://reqres.in/api/users/2"
+				"url": "{{rqbaseurl}}/api/users/2"
 			},
 			"response": []
 		}
