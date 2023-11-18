@@ -235,17 +235,17 @@
 						}
 					}
 				},
-				"url": "https://simple-books-api.glitch.me/orders/-t-TEPj8jaKfSwAgCj5Sa"
+				"url": "{{base}}orders/-t-TEPj8jaKfSwAgCj5Sa"
 			},
 			"response": []
 		},
 		{
-			"name": "plc orders",
+			"name": "place_orders",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
+						"id": "f20a8ea4-1407-4870-a1a7-0dd4c351246c",
 						"exec": [
 							""
 						],
@@ -312,59 +312,7 @@
 						}
 					}
 				},
-				"url": "https://simple-books-api.glitch.me/api-clients/"
-			},
-			"response": []
-		},
-		{
-			"name": "googleSearch",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "d0b944b7-ff21-44e0-ab13-cb740a492331",
-						"exec": [
-							"// Test for GET request\r",
-							"pm.test(\"Status code is 200 OK for GET request\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"var template = `\r",
-							"<div style=\"font-size: 20px; text-align: center;\">\r",
-							"    <h1>Google Homepage</h1>\r",
-							"</div>\r",
-							"`;\r",
-							"\r",
-							"function constructVisualizerPayload() {\r",
-							"    return { response: pm.response.text() };\r",
-							"}\r",
-							"\r",
-							"pm.visualizer.set(template, constructVisualizerPayload());"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "f7455f5d-eabc-450e-8ede-d2465c914368",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "google.com?q=Hammed oreoluwa",
-					"host": [
-						"google",
-						"com"
-					],
-					"query": [
-						{
-							"key": "q",
-							"value": "Hammed oreoluwa",
-							"type": "text"
-						}
-					]
-				}
+				"url": "{{base}}/api-clients/"
 			},
 			"response": []
 		}
