@@ -30,7 +30,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"postman.setNextRequest('plc orders')"
+							"postman.setNextRequest('place_orders')"
 						],
 						"type": "text/javascript"
 					}
