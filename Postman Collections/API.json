@@ -83,7 +83,8 @@
 							"\r",
 							"pm.test(\"Status code is 200 for GET request\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"postman.setNextRequest('Single book')"
 						],
 						"type": "text/javascript"
 					}
@@ -207,7 +208,12 @@
 					"script": {
 						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
 						"exec": [
-							""
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 201 for POST request\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							"postman.setNextRequest('Get Order')"
 						],
 						"type": "text/javascript"
 					}
@@ -247,6 +253,11 @@
 					"script": {
 						"id": "f20a8ea4-1407-4870-a1a7-0dd4c351246c",
 						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 201 for POST request\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
 							""
 						],
 						"type": "text/javascript"
