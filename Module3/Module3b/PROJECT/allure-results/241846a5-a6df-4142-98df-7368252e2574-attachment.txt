@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Unable to send sms. Your SMS sending status is not yet activated. Please contact us at contact@sendinblue.com to request activation."}

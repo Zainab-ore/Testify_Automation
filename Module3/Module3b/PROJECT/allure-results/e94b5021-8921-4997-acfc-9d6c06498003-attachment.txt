@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"The provided image url does not return valid response"}

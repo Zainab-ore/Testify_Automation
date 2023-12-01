@@ -1,0 +1,1 @@
+{"range":"2023-09-02|2023-12-01","requests":14,"delivered":10,"hardBounces":0,"softBounces":0,"clicks":0,"uniqueClicks":0,"opens":1,"uniqueOpens":1,"spamReports":0,"blocked":0,"invalid":0,"unsubscribed":0}

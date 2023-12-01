@@ -1,0 +1,10 @@
+{
+    "id": "SoDaHDHQqAtdpYMGH",
+    "type": "agent",
+    "text": "Your order has shipped! Here’s your tracking number: 9114 5847 4668 7775 9233 54",
+    "visitorId": "kZMvWhf8npAu3H6qd57w2Hv6nh6rnxvg",
+    "agentId": "655b6f934b3a835a5428bea6_655b6f7e82e7dd1e783f7a12",
+    "createdAt": 1701420920235,
+    "isPushed": true,
+    "isMissedByVisitor": true
+}

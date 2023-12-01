@@ -1,0 +1,1 @@
+{"url":"https://webhook.site/5ebc5d36-217f-4989-81fd-5f02cbb49c6d","id":927689,"description":"test for SMS","events":["spam","opened","click","hardBounce","softBounce","unsubscribed","listAddition","delivered"],"type":"marketing","createdAt":"2023-11-22T13:24:02.000+01:00","modifiedAt":"2023-11-22T13:24:02.000+01:00"}

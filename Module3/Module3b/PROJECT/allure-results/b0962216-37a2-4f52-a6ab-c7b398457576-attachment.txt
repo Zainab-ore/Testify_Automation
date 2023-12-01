@@ -1,0 +1,10 @@
+{
+    "id": "65636d4d8e0c893e6f0e2cb5",
+    "taskTypeId": "655b6f93acd26807eb763a21",
+    "name": "Send an email",
+    "contactsIds": null,
+    "dealsIds": null,
+    "companiesIds": null,
+    "priority": true,
+    "createdAt": "2023-11-26T16:07:41.411Z"
+}

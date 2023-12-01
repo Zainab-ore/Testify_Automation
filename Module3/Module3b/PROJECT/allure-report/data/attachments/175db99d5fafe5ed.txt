@@ -1,0 +1,170 @@
+[
+    {
+        "internalName": "actual_close_date",
+        "label": "Actual close date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "amount",
+        "label": "Amount",
+        "attributeTypeName": "number",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "close_date",
+        "label": "Close date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "closed_lost_reason",
+        "label": "Closed lost reason",
+        "attributeTypeName": "text",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "closed_won_reason",
+        "label": "Closed won reason",
+        "attributeTypeName": "text",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "created_at",
+        "label": "Created at",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "deal_description",
+        "label": "Deal description",
+        "attributeTypeName": "text",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "deal_name",
+        "label": "Deal name",
+        "attributeTypeName": "text",
+        "attributeOptions": null,
+        "isRequired": true
+    },
+    {
+        "internalName": "deal_owner",
+        "label": "Deal owner",
+        "attributeTypeName": "user",
+        "attributeOptions": null,
+        "isRequired": true
+    },
+    {
+        "internalName": "deal_stage",
+        "label": "Deal stage",
+        "attributeTypeName": "single-select",
+        "attributeOptions": [],
+        "isRequired": true
+    },
+    {
+        "internalName": "last_activity_date",
+        "label": "Last activity date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "last_contacted_date",
+        "label": "Last contacted date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "last_updated_date",
+        "label": "Last updated date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "lost_reason",
+        "label": "Lost reason",
+        "attributeTypeName": "single-select",
+        "attributeOptions": [
+            {
+                "key": "price_was_too_high",
+                "value": "Price was too high"
+            },
+            {
+                "key": "opted_for_a_competitor",
+                "value": "Opted for a competitor"
+            },
+            {
+                "key": "junk_lead",
+                "value": "Junk lead"
+            },
+            {
+                "key": "not_interested",
+                "value": "Not interested"
+            },
+            {
+                "key": "client_requirement_not_met",
+                "value": "Client requirement not met"
+            }
+        ],
+        "isRequired": false
+    },
+    {
+        "internalName": "number_of_activities",
+        "label": "Number of activities",
+        "attributeTypeName": "number",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "number_of_contacts",
+        "label": "Number of contacts",
+        "attributeTypeName": "number",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "number_of_times_contacted",
+        "label": "Number of times contacted",
+        "attributeTypeName": "number",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "owner_assign_date",
+        "label": "Owner assign date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "pipeline",
+        "label": "Pipeline",
+        "attributeTypeName": "single-select",
+        "attributeOptions": [],
+        "isRequired": false
+    },
+    {
+        "internalName": "stage_updated_at",
+        "label": "Stage updated date",
+        "attributeTypeName": "date",
+        "attributeOptions": null,
+        "isRequired": false
+    },
+    {
+        "internalName": "total_revenue",
+        "label": "Total revenue",
+        "attributeTypeName": "number",
+        "attributeOptions": null,
+        "isRequired": false
+    }
+]
