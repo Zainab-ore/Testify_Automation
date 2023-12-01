@@ -1,0 +1,1 @@
+{"code":"reseller_permission_denied","message":"Current account is not a reseller"}

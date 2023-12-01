@@ -1,0 +1,1 @@
+{"webhooks":[{"url":"https://app.brevo.com/","id":932001,"events":["request","delivered","uniqueOpened","opened","click","softBounce","hardBounce","invalid","deferred","spam","unsubscribed","blocked",null,null],"createdAt":"2023-11-28T08:57:19.000+01:00","modifiedAt":"2023-11-28T08:57:19.000+01:00","type":"transactional"}]}

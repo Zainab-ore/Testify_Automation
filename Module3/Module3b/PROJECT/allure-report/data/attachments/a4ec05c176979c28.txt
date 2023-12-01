@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Campaign is not an A/B test campaign"}

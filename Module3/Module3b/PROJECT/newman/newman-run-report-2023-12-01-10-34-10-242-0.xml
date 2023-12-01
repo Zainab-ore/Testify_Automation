@@ -1,0 +1,2604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sendinblue" tests="157" time="24.011">
+  <testsuite name="Sales CRM / Companies / Get all Companies" id="20716b04-57c5-4ca2-8564-7c70a232cb5a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.794"/>
+  <testsuite name="Sales CRM / Companies / Create a company" id="52281298-06cb-4142-9172-5d2a66a6835e" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="0" errors="0" time="0.472">
+    <testcase name="This test is to verify that the response has all the  field " time="0.472" classname="Sendinblue"/>
+    <testcase name="Id should not be an empty string" time="0.472" classname="Sendinblue"/>
+    <testcase name="This test is to verify that the the response time should be less than 1000ms" time="0.472" classname="Sendinblue"/>
+    <testcase name="This test is to verify that the Response body is in JSON format" time="0.472" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.472" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get company attributes" id="28daa5d5-03d8-4126-b61e-baec3340dfe4" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="0" errors="0" time="0.405">
+    <testcase name="Verify that the 'internalName' field is a non-empty string" time="0.405" classname="Sendinblue"/>
+    <testcase name="Verify that the attributeTypeName field is a non-empty string" time="0.405" classname="Sendinblue"/>
+    <testcase name="Verify that the 'required' field is a boolean value" time="0.405" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.405" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Link and Unlink company with contact and deal" id="6e8dda99-9533-4c7c-aac8-e75df5eec8e7" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="7.951"/>
+  <testsuite name="Sales CRM / Companies / Get a company" id="238d4b51-fae0-409f-b370-7b6b0623a695" timestamp="2023-12-01T10:32:59.666Z" tests="6" failures="0" errors="0" time="0.408">
+    <testcase name="This test is to verify that the Id is a not an empty string" time="0.408" classname="Sendinblue"/>
+    <testcase name=" This test is to verify that the attributes exist and includes all keys" time="0.408" classname="Sendinblue"/>
+    <testcase name="LinkedContactsIds array is present and contains expected number of elements" time="0.408" classname="Sendinblue"/>
+    <testcase name="LinkedDealsIds array is present and contains expected number of elements" time="0.408" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.408" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Create a company" id="b5efa668-21b2-4e3d-a190-0e37bdc9889e" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="0" errors="0" time="0.391">
+    <testcase name="This test is to verify that the response has all the  field " time="0.391" classname="Sendinblue"/>
+    <testcase name="Id should not be an empty string" time="0.391" classname="Sendinblue"/>
+    <testcase name="This test is to verify that the the response time should be less than 1000ms" time="0.391" classname="Sendinblue"/>
+    <testcase name="This test is to verify that the Response body is in JSON format" time="0.391" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.391" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Delete a company" id="ecf2271a-f587-402d-9243-4db670bea37d" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.424"/>
+  <testsuite name="Sales CRM / Companies / Update a company" id="dedd5fd4-5815-452f-b244-42dba06baf1f" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="0" errors="0" time="0.540">
+    <testcase name="This test is to verify that the company is updated" time="0.540" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.540" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get pipeline stages" id="4931da08-2d31-4ddf-9ff7-bc7b0dec234c" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="1" errors="0" time="0.427">
+    <testcase name="Pipeline and pipeline_name fields are present" time="0.427" classname="Sendinblue"/>
+    <testcase name="Stages array is present and contains the expected number of elements" time="0.427" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected [ { …(2) }, { …(2) }, { …(2) }, …(4) ] to have a length of 2 but got 7">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get pipeline stages.]]>
+        <![CDATA[Test description: Stages array is present and contains the expected number of elements.]]>
+        <![CDATA[Error message: expected [ { …(2) }, { …(2) }, { …(2) }, …(4) ] to have a length of 2 but got 7.]]>
+        <![CDATA[Stacktrace: AssertionError: expected [ { …(2) }, { …(2) }, { …(2) }, …(4) ] to have a length of 2 but got 7
+   at Object.eval sandbox-script.js:2:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each stage's id is in a valid format" time="0.427" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.427" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get all deals" id="c1052f65-75da-4038-b020-6956d8985014" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.378"/>
+  <testsuite name="Sales CRM / Deals / Create a deal" id="2323b58e-c61b-462b-a22c-74a5bc9c6e5a" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="3" errors="0" time="0.517">
+    <testcase name="Response has the 'id' field" time="0.517" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected { Object (message) } to have property 'id'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Create a deal.]]>
+        <![CDATA[Test description: Response has the 'id' field.]]>
+        <![CDATA[Error message: expected { Object (message) } to have property 'id'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (message) } to have property 'id'
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="The 'id' field is a non-empty string" time="0.517" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a string">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Create a deal.]]>
+        <![CDATA[Test description: The 'id' field is a non-empty string.]]>
+        <![CDATA[Error message: expected undefined to be a string.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a string
+   at Object.eval sandbox-script.js:2:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="The id field is in the correct format" time="0.517" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to match /^[a-fA-F0-9]{24}$/">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Create a deal.]]>
+        <![CDATA[Test description: The id field is in the correct format.]]>
+        <![CDATA[Error message: expected undefined to match /^[a-fA-F0-9]{24}$/.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to match /^[a-fA-F0-9]{24}$/
+   at Object.eval sandbox-script.js:3:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.517" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Link and Unlink a deal with contacts and companies" id="771a0a28-d91c-4276-b007-d7e31d938284" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.415"/>
+  <testsuite name="Sales CRM / Deals / Get deal attributes" id="13be72ce-d6dc-49d4-90cf-87ca37b2cd50" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="1.094"/>
+  <testsuite name="Sales CRM / Deals / Get a deal" id="074c7efd-2683-40d1-b086-d8da9085d276" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.443"/>
+  <testsuite name="Sales CRM / Deals / Delete a deal" id="7bb64f62-d351-43c5-8325-0615bf6dfff0" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.812"/>
+  <testsuite name="Sales CRM / Deals / Update a deal" id="84b8f851-c2cb-46d1-983e-0953a838274b" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.326"/>
+  <testsuite name="Sales CRM / Tasks / Get all tasks" id="8155008b-1903-4a3f-b256-a1daaecc175a" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="0" errors="0" time="1.146">
+    <testcase name="Response status code is 200" time="1.146" classname="Sendinblue"/>
+    <testcase name="Validate the format of the 'createdAt' field in each item" time="1.146" classname="Sendinblue"/>
+    <testcase name="Verify the presence of the 'pager' object and its properties" time="1.146" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Create a task" id="6d808d44-d3ce-4a7a-9122-317a08e7c545" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="1" errors="0" time="1.133">
+    <testcase name="Response status code is 201" time="1.133" classname="Sendinblue"/>
+    <testcase name="Response has the required fields - id and priority" time="1.133" classname="Sendinblue"/>
+    <testcase name="ID is a non-empty string" time="1.133" classname="Sendinblue"/>
+    <testcase name="Priority is a boolean value" time="1.133" classname="Sendinblue"/>
+    <testcase name="Response time is in an acceptable range" time="1.133" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 1133 to be below 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Create a task.]]>
+        <![CDATA[Test description: Response time is in an acceptable range.]]>
+        <![CDATA[Error message: expected 1133 to be below 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1133 to be below 500
+   at Object.eval sandbox-script.js:5:18).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all task types" id="e40e949c-bab7-46dd-bba1-4c56a81dd0fb" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="0" errors="0" time="1.022">
+    <testcase name="Response status code is 200" time="1.022" classname="Sendinblue"/>
+    <testcase name="Validate the response schema for each task type object" time="1.022" classname="Sendinblue"/>
+    <testcase name="Each task type object has a non-empty 'id' field" time="1.022" classname="Sendinblue"/>
+    <testcase name="Each task type object has a non-empty 'title' field" time="1.022" classname="Sendinblue"/>
+    <testcase name="Each task type object's 'id' field is a valid ObjectId format" time="1.022" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get a task" id="308e9331-8137-49e4-80a7-a7baefa5b9f2" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="0" errors="0" time="0.911">
+    <testcase name="Response status code is 200" time="0.911" classname="Sendinblue"/>
+    <testcase name="Task ID is a non-empty string" time="0.911" classname="Sendinblue"/>
+    <testcase name="Task type ID is a non-empty string" time="0.911" classname="Sendinblue"/>
+    <testcase name="Name is a non-empty string" time="0.911" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Delete a task" id="22ce1bc3-a1b6-4f03-85fa-8a53e698b4ba" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.915"/>
+  <testsuite name="Sales CRM / Tasks / Update a task" id="9d9d24a9-3a02-4dc7-9674-6b1c4521c602" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.877"/>
+  <testsuite name="Sales CRM / Notes / Get all notes" id="dce3eec9-a083-409d-a674-a3e355283216" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.320"/>
+  <testsuite name="Sales CRM / Notes / Create a note" id="6bf6f7e1-da69-4193-91d9-1c599f01bf26" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="0" errors="0" time="0.295">
+    <testcase name="Response status code is 201" time="0.295" classname="Sendinblue"/>
+    <testcase name="Id field is not empty" time="0.295" classname="Sendinblue"/>
+    <testcase name="Text field is a non-empty string" time="0.295" classname="Sendinblue"/>
+    <testcase name="CompanyIds array is present and not empty" time="0.295" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get a note" id="6e7536b8-716a-4b91-a057-c2dbe60228de" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="4" errors="0" time="0.356">
+    <testcase name="Text field must be a non-empty string" time="0.356" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a string">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Get a note.]]>
+        <![CDATA[Test description: Text field must be a non-empty string.]]>
+        <![CDATA[Error message: expected undefined to be a string.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a string
+   at Object.eval sandbox-script.js:1:25).]]>
+      </failure>
+    </testcase>
+    <testcase name="ContactIds array is present and contains expected number of elements" time="0.356" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Get a note.]]>
+        <![CDATA[Test description: ContactIds array is present and contains expected number of elements.]]>
+        <![CDATA[Error message: expected undefined to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be an array
+   at Object.eval sandbox-script.js:2:25).]]>
+      </failure>
+    </testcase>
+    <testcase name="Author object contains required fields - email, timezone, and name" time="0.356" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to exist">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Get a note.]]>
+        <![CDATA[Test description: Author object contains required fields - email, timezone, and name.]]>
+        <![CDATA[Error message: expected undefined to exist.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to exist
+   at Object.eval sandbox-script.js:3:25).]]>
+      </failure>
+    </testcase>
+    <testcase name="CreatedAt field is in a valid date format" time="0.356" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to match /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Get a note.]]>
+        <![CDATA[Test description: CreatedAt field is in a valid date format.]]>
+        <![CDATA[Error message: expected undefined to match /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to match /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/
+   at Object.eval sandbox-script.js:4:25).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Update a note" id="218c9d99-0367-4610-9815-1a4ec40a0f48" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="0" errors="0" time="0.414">
+    <testcase name="Id field should not be empty" time="0.414" classname="Sendinblue"/>
+    <testcase name="Text field is not empty" time="0.414" classname="Sendinblue"/>
+    <testcase name="CompanyIds array should be present and not empty" time="0.414" classname="Sendinblue"/>
+    <testcase name="DealIds array should be present and empty" time="0.414" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Delete a note" id="6f44841d-0abc-4e3b-9420-c3a3eecb35b6" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="0" time="0.401">
+    <testcase name="Deleted" time="0.401" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Delete a note.]]>
+        <![CDATA[Test description: Deleted.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:27).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get all files" id="54d6b5fa-7f51-4f77-8faa-07220da59ec1" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="0" time="0.424"/>
+  <testsuite name="Sales CRM / Files / Upload a file" id="d17528fa-5a55-4136-8b12-2e6a775d8f19" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Download a file" id="5393ebb8-ee62-4302-8740-49c5d0faf266" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: AggregateError
+    at internalConnectMultiple (node:net:1114:18)
+    at afterConnectMultiple (node:net:1667:5)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Delete a file" id="4bb7a62f-9db1-49ce-bb87-7a27b4b5cad5" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get file details" id="6a544aa9-7476-4682-b1bc-a62970ffec56" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an email campaign report" id="c4ea772c-1b8d-4bcf-a88f-c843f85222f1" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Sender object must exist and be an object" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get an email campaign report.]]>
+        <![CDATA[Test description: Sender object must exist and be an object.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:33).]]>
+      </failure>
+    </testcase>
+    <testcase name="Recipients object contains expected lists and exclusion lists" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get an email campaign report.]]>
+        <![CDATA[Test description: Recipients object contains expected lists and exclusion lists.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:33).]]>
+      </failure>
+    </testcase>
+    <testcase name="Statistics object contains expected global and campaign stats" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get an email campaign report.]]>
+        <![CDATA[Test description: Statistics object contains expected global and campaign stats.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:33).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign" id="5eea3303-2c8a-49e5-81eb-a2cbea267976" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Delete an email campaign" id="d10d9e2b-69b3-41a4-8616-a3b34a9950c0" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="deleted" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Delete an email campaign.]]>
+        <![CDATA[Test description: deleted.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:35).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId" id="50d8d9c3-ae7f-471d-a873-91aaf2e3201c" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Sent immediately" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId.]]>
+        <![CDATA[Test description: Sent immediately.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:36).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign to your test list" id="68600c60-2063-41d3-ba03-b6fdef7912a3" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign status" id="35cfa2ad-6c95-49e0-a336-835139386a9c" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Status code is 204" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Update an email campaign status.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:38).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send the report of a campaign" id="2d0facb0-14cf-4d71-8820-6e89e1276198" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an A/B test email campaign results" id="7d1060a7-ba4c-4c88-951d-d45c5e7c6887" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get a shared template url" id="46342c04-5e06-4896-9630-397027a05722" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="SharedUrl is not empty" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get a shared template url.]]>
+        <![CDATA[Test description: SharedUrl is not empty.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:41).]]>
+      </failure>
+    </testcase>
+    <testcase name="SharedUrl is a valid URL format" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get a shared template url.]]>
+        <![CDATA[Test description: SharedUrl is a valid URL format.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:41).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 200ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Get a shared template url.]]>
+        <![CDATA[Test description: Response time is less than 200ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:3:41).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Export the recipients of an email campaign" id="3e43fca4-b2af-4d1a-bd22-73b2edb5b078" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Return all your created email campaigns" id="b01d5f60-f738-4f9b-9af4-08aee23c0a9c" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response is an object with count property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Return all your created email campaigns.]]>
+        <![CDATA[Test description: Response is an object with count property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:43).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response is an object with campaigns property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Return all your created email campaigns.]]>
+        <![CDATA[Test description: Response is an object with campaigns property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:43).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Return all your created email campaigns.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:3:43).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Create an email campaign" id="c261d092-bcbc-4b39-8173-b9d842e3aa33" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Upload an image to your account's image gallery" id="172d636c-65d0-4e7f-9117-69ab73cec967" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Returns the information for all your created SMS campaigns" id="761a3d77-8fb0-4761-8840-930538c3db40" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Creates an SMS campaign" id="a0b9731b-d6c6-4b66-9b43-585befec499d" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Get an SMS campaign" id="e7f2375d-9770-4bb1-b460-40b3b3ebabec" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update an SMS campaign" id="a675bac6-557a-49d3-b5c7-28b207dd71e2" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Delete an SMS campaign" id="4ac8e841-f12a-40cb-8f65-90dac9cb9d9a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send your SMS campaign immediately" id="29449fef-d95a-4c19-bebd-af850b81a08f" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update a campaign's status" id="c2f05169-1f38-4432-a2de-009dfc90e269" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send a test SMS campaign" id="f0ce9aeb-b4be-45aa-96f5-7662a43d1756" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Export an SMS campaign's recipients" id="eec3f750-e59a-4657-ba31-179615431c55" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send an SMS campaign's report" id="dcbbc0af-4b1d-442d-893f-bdf57db5186b" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Send a message as an agent" id="bbe710cd-a6ca-4379-8139-d3faf87236ac" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="4" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response has the required fields - id, type, text, visitorId, agentId, createdAt" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Send a message as an agent.]]>
+        <![CDATA[Test description: Response has the required fields - id, type, text, visitorId, agentId, createdAt.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:56).]]>
+      </failure>
+    </testcase>
+    <testcase name="ID is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Send a message as an agent.]]>
+        <![CDATA[Test description: ID is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:56).]]>
+      </failure>
+    </testcase>
+    <testcase name="Visitor ID is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Send a message as an agent.]]>
+        <![CDATA[Test description: Visitor ID is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:56).]]>
+      </failure>
+    </testcase>
+    <testcase name="Agent ID is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Send a message as an agent.]]>
+        <![CDATA[Test description: Agent ID is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:56).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Get a message" id="4fdb411e-5b3f-4f8f-9f4a-760e6b1cc4d8" timestamp="2023-12-01T10:32:59.666Z" tests="6" failures="6" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response status code is 200" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to equal 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: Response status code is 200.]]>
+        <![CDATA[Error message: expected undefined to equal 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to equal 200
+   at Object.eval sandbox-script.js:1:57).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has the required fields - id, type, text, visitorId, agentId, and createdAt" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: Response has the required fields - id, type, text, visitorId, agentId, and createdAt.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:57).]]>
+      </failure>
+    </testcase>
+    <testcase name="ID is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: ID is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:57).]]>
+      </failure>
+    </testcase>
+    <testcase name="Type should be either 'agent' or 'visitor'" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: Type should be either 'agent' or 'visitor'.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:57).]]>
+      </failure>
+    </testcase>
+    <testcase name="CreatedAt is in a valid date format" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: CreatedAt is in a valid date format.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:5:57).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:6:57).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Update a message sent by an agent" id="f90d894f-f4dc-4fb5-b5f4-5459136580a5" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="5" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Id is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Update a message sent by an agent.]]>
+        <![CDATA[Test description: Id is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:58).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Update a message sent by an agent.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:2:58).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate the 'type' is either 'agent' or 'visitor'" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Update a message sent by an agent.]]>
+        <![CDATA[Test description: Validate the 'type' is either 'agent' or 'visitor'.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:58).]]>
+      </failure>
+    </testcase>
+    <testcase name="Text is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Update a message sent by an agent.]]>
+        <![CDATA[Test description: Text is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:58).]]>
+      </failure>
+    </testcase>
+    <testcase name="CreatedAt is a valid timestamp in milliseconds" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Update a message sent by an agent.]]>
+        <![CDATA[Test description: CreatedAt is a valid timestamp in milliseconds.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:5:58).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Delete a message sent by an agent" id="2f3beefa-cc0c-415b-ac62-e381239f91e4" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Deleted sucessfully" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Delete a message sent by an agent.]]>
+        <![CDATA[Test description: Deleted sucessfully.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:59).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Messages / Delete a message sent by an agent.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:2:59).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Status / Sets agent’s status to online for 2-3 minutes" id="ec0ed40b-50ae-4aab-b84f-633587b6fb42" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Adent status is created online" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Status / Sets agent’s status to online for 2-3 minutes.]]>
+        <![CDATA[Test description: Adent status is created online.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:60).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Status / Sets agent’s status to online for 2-3 minutes.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:2:60).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Send an automated message to a visitor" id="aed51a6d-2ee4-4e37-b849-d844f174bfaa" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="5" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response has the required fields" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Send an automated message to a visitor.]]>
+        <![CDATA[Test description: Response has the required fields.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:61).]]>
+      </failure>
+    </testcase>
+    <testcase name="Id is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Send an automated message to a visitor.]]>
+        <![CDATA[Test description: Id is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:61).]]>
+      </failure>
+    </testcase>
+    <testcase name="CreatedAt is a valid timestamp" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Send an automated message to a visitor.]]>
+        <![CDATA[Test description: CreatedAt is a valid timestamp.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:61).]]>
+      </failure>
+    </testcase>
+    <testcase name="IsPushed field is set to true" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Send an automated message to a visitor.]]>
+        <![CDATA[Test description: IsPushed field is set to true.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:61).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Send an automated message to a visitor.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:5:61).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Get an automated message" id="febf56a6-271d-4df9-9698-0f2717109e04" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="5" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response has the required fields" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Get an automated message.]]>
+        <![CDATA[Test description: Response has the required fields.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:62).]]>
+      </failure>
+    </testcase>
+    <testcase name="ID is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Get an automated message.]]>
+        <![CDATA[Test description: ID is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:62).]]>
+      </failure>
+    </testcase>
+    <testcase name="Text is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Get an automated message.]]>
+        <![CDATA[Test description: Text is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:62).]]>
+      </failure>
+    </testcase>
+    <testcase name="CreatedAt is in a valid date format" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Get an automated message.]]>
+        <![CDATA[Test description: CreatedAt is in a valid date format.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:62).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Get an automated message.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:5:62).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Update an automated message" id="c349f509-8547-4a96-9093-f973124f379d" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="4" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="VisitorId should be in a valid format" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Update an automated message.]]>
+        <![CDATA[Test description: VisitorId should be in a valid format.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:63).]]>
+      </failure>
+    </testcase>
+    <testcase name="AgentId is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Update an automated message.]]>
+        <![CDATA[Test description: AgentId is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:63).]]>
+      </failure>
+    </testcase>
+    <testcase name="CreatedAt is a valid timestamp" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Update an automated message.]]>
+        <![CDATA[Test description: CreatedAt is a valid timestamp.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:63).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Update an automated message.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:4:63).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Delete an automated message" id="7e811f83-f118-461b-b237-18d3dc5e939d" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Deleted sucessfully" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Delete an automated message.]]>
+        <![CDATA[Test description: Deleted sucessfully.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:64).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Delete an automated message.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:2:64).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get all the contacts" id="f41c512c-4d7b-4d04-b18b-4ef0f28ef324" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create a contact" id="2bce03b9-d247-4fb2-82a1-b960fa887549" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="5" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response status code is 201" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create a contact.]]>
+        <![CDATA[Test description: Response status code is 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:66).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has the required field - id" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create a contact.]]>
+        <![CDATA[Test description: Response has the required field - id.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:66).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify that the id is a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create a contact.]]>
+        <![CDATA[Test description: Verify that the id is a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:66).]]>
+      </failure>
+    </testcase>
+    <testcase name="The id should be unique for each execution" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create a contact.]]>
+        <![CDATA[Test description: The id should be unique for each execution.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:66).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is within an acceptable range" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Create a contact.]]>
+        <![CDATA[Test description: Response time is within an acceptable range.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:5:66).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create Contact via DOI (Double-Opt-In) Flow" id="4ba40936-4934-4fd7-9eb6-289912de545a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update multiple contacts" id="26a24ee2-542d-45fa-b036-bd4c3ab4cbf3" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Export contacts" id="0579a3cf-ddf7-4e8f-b4a7-775e51a876cc" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Import contacts" id="3a95fa4a-3669-4eb8-8bd5-384f9cec4b72" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get a contact's details" id="7af6cc97-45fc-4f67-a02f-b4a0c0b30f88" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Email is in a valid format" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Get a contact's details.]]>
+        <![CDATA[Test description: Email is in a valid format.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:71).]]>
+      </failure>
+    </testcase>
+    <testcase name="ID is a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Get a contact's details.]]>
+        <![CDATA[Test description: ID is a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:71).]]>
+      </failure>
+    </testcase>
+    <testcase name="EmailBlacklisted and smsBlacklisted are boolean values" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Get a contact's details.]]>
+        <![CDATA[Test description: EmailBlacklisted and smsBlacklisted are boolean values.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:71).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Delete a contact" id="2678fee4-973d-4812-a20a-16b882b78c86" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Status code is 204" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Contacts / Delete a contact.]]>
+        <![CDATA[Test description: Status code is 204.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:72).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update a contact" id="1253e40f-8ffd-4813-acc0-13a1e3082696" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get email campaigns' statistics for a contact" id="648324d0-334b-43aa-bcdf-9172f5dd664e" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get all folders" id="cc46adfe-a1cf-474b-bedc-1f622a32fb8b" timestamp="2023-12-01T10:32:59.666Z" tests="7" failures="7" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response is an object with folders property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Response is an object with folders property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response is an object with count property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Response is an object with count property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each element in the folders array has an id property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Each element in the folders array has an id property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each element in the folders array has a name property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Each element in the folders array has a name property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each element in the folders array has a totalBlacklisted property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Each element in the folders array has a totalBlacklisted property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:5:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each element in the folders array has a totalSubscribers property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Each element in the folders array has a totalSubscribers property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:6:75).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each element in the folders array has a uniqueSubscribers property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Get all folders.]]>
+        <![CDATA[Test description: Each element in the folders array has a uniqueSubscribers property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:7:75).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Create a folder" id="b7cae41b-98a3-4dec-98d0-5134ace93686" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="5" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Successfully Created" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Create a folder.]]>
+        <![CDATA[Test description: Successfully Created.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:76).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has the required field 'id'" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Create a folder.]]>
+        <![CDATA[Test description: Response has the required field 'id'.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:76).]]>
+      </failure>
+    </testcase>
+    <testcase name="The 'id' should be a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Create a folder.]]>
+        <![CDATA[Test description: The 'id' should be a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:76).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify that the 'id' in the response matches the expected value" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Create a folder.]]>
+        <![CDATA[Test description: Verify that the 'id' in the response matches the expected value.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:76).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Create a folder.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:5:76).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Returns a folder's details" id="ba7253a0-840b-48e1-98f9-b467e52affea" timestamp="2023-12-01T10:32:59.666Z" tests="6" failures="6" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response is an object with id, name, totalBlacklisted, uniqueSubscribers, and totalSubscribers properties" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Returns a folder's details.]]>
+        <![CDATA[Test description: Response is an object with id, name, totalBlacklisted, uniqueSubscribers, and totalSubscribers properties.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:77).]]>
+      </failure>
+    </testcase>
+    <testcase name="id is a number" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Returns a folder's details.]]>
+        <![CDATA[Test description: id is a number.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:77).]]>
+      </failure>
+    </testcase>
+    <testcase name="name is a string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Returns a folder's details.]]>
+        <![CDATA[Test description: name is a string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:77).]]>
+      </failure>
+    </testcase>
+    <testcase name="totalBlacklisted is a number" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Returns a folder's details.]]>
+        <![CDATA[Test description: totalBlacklisted is a number.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:77).]]>
+      </failure>
+    </testcase>
+    <testcase name="uniqueSubscribers is a number" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Returns a folder's details.]]>
+        <![CDATA[Test description: uniqueSubscribers is a number.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:5:77).]]>
+      </failure>
+    </testcase>
+    <testcase name="totalSubscribers is a number" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Returns a folder's details.]]>
+        <![CDATA[Test description: totalSubscribers is a number.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:6:77).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Update a folder" id="05d253e6-2370-4f68-9c4c-b4ba67dd7b8e" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="SUCCESSFULLY UPDATED " time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Update a folder.]]>
+        <![CDATA[Test description: SUCCESSFULLY UPDATED .]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:78).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Delete a folder (and all its lists)" id="0339c154-c9b9-4757-90cd-d7fe945546ea" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Deleted Successfully" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Folders / Delete a folder (and all its lists).]]>
+        <![CDATA[Test description: Deleted Successfully.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:79).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get lists in a folder" id="8b8eb62f-32ce-473a-baf6-944b76bf10a7" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get all the lists" id="50cf4dc0-9b42-477b-a0c3-500fbb1f012f" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Validate the 'lists' array is present in the response" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Get all the lists.]]>
+        <![CDATA[Test description: Validate the 'lists' array is present in the response.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:81).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate that the value of 'id' is a non-negative integer for each object in the 'lists' array" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Get all the lists.]]>
+        <![CDATA[Test description: Validate that the value of 'id' is a non-negative integer for each object in the 'lists' array.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:81).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate that the value of 'name' is a non-empty string for each object in the 'lists' array" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Get all the lists.]]>
+        <![CDATA[Test description: Validate that the value of 'name' is a non-empty string for each object in the 'lists' array.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:81).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Create a list" id="e094508d-42ac-4cf8-b1db-d1d60bf0efc1" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Created Successfully" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Create a list.]]>
+        <![CDATA[Test description: Created Successfully.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:82).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response is an object with id property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Lists / Create a list.]]>
+        <![CDATA[Test description: Response is an object with id property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:82).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get contacts in a list" id="ac42d062-d561-4ec2-86a4-305e5089581f" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Add existing contacts to a list" id="4fb60afd-78b5-4839-8c0b-f57e4c28fa62" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a contact from a list" id="ca50f95e-2b04-4ad9-a2e6-9f747e269de0" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get a list's details" id="11c1f2cc-ab1d-40f2-be42-6f1ff8858d76" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Update a list" id="88ae651d-4cf4-4798-a50d-3345d32a9737" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a list" id="94accc22-9084-49e2-a717-5c2d4673d91e" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / List all attributes" id="7f63daa3-1ba8-4a30-a962-4d46843e821e" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Each attribute has a non-empty name" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Each attribute has a non-empty name.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:89).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate attribute enumeration" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Validate attribute enumeration.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:89).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Update contact attribute" id="6df7bd25-d39b-4943-b301-a6203047d34c" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Create contact attribute" id="97e599bd-ceb4-4da5-a95a-c71bb877d119" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Delete an attribute" id="c1b8cfe1-5daf-4061-bf6c-4ff8a91ad5c1" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Send a transactional email" id="a4429192-ed2e-4699-929b-427f401c89e9" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the list of transactional emails on the basis of allowed filters" id="70cbe7b9-7760-4194-aa3f-f2cb4dc84674" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Delete scheduled emails by batchId or messageId" id="a2eec1a6-7150-4076-a3fb-347f724eb9a2" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the personalized content of a sent transactional email" id="0731a35c-7cec-47d3-8421-4ff30f8b536a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Fetch scheduled emails by batchId or messageId" id="0049699b-176b-4b85-8450-42393064b232" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Get the list of email templates" id="910a1766-ee7f-4b22-b8c7-57e608bb0738" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="4" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Verify that the 'count' field is a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Get the list of email templates.]]>
+        <![CDATA[Test description: Verify that the 'count' field is a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:98).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify that the 'templates' field is an array and is not empty" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Get the list of email templates.]]>
+        <![CDATA[Test description: Verify that the 'templates' field is an array and is not empty.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:98).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate the 'id' field for each template in the response" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Get the list of email templates.]]>
+        <![CDATA[Test description: Validate the 'id' field for each template in the response.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:98).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate the 'name' field for each template in the response" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Get the list of email templates.]]>
+        <![CDATA[Test description: Validate the 'name' field for each template in the response.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:98).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Create an email template" id="6b6e943b-4dd3-4db3-a2e0-307621741821" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Returns the template information" id="59048d73-b7a1-4af2-a981-ef8b2efee72e" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="The id field is a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Returns the template information.]]>
+        <![CDATA[Test description: The id field is a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:100).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify that the 'name' field is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Returns the template information.]]>
+        <![CDATA[Test description: Verify that the 'name' field is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:100).]]>
+      </failure>
+    </testcase>
+    <testcase name="Subject field is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Returns the template information.]]>
+        <![CDATA[Test description: Subject field is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:100).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Update an email template" id="d52bf8d6-d2f8-42e1-af7c-aa5f3de5a4ee" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Sucessfully updated" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Update an email template.]]>
+        <![CDATA[Test description: Sucessfully updated.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:101).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Delete an inactive email template" id="a1c889c7-ed59-4473-8a5a-d7f5a9dfae39" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="deleted sucessfully" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Delete an inactive email template.]]>
+        <![CDATA[Test description: deleted sucessfully.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:102).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Send a template to your test list" id="c2bacfca-79f2-4fc6-acea-735459a3934b" timestamp="2023-12-01T10:32:59.666Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Email sent" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Templates / Send a template to your test list.]]>
+        <![CDATA[Test description: Email sent.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:103).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated over a period of time" id="e8323133-108c-4ec6-b51b-d2a315e1d521" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Validate that the range is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get your transactional email activity aggregated over a period of time.]]>
+        <![CDATA[Test description: Validate that the range is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:104).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get your transactional email activity aggregated over a period of time.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:2:104).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated per day" id="21b5bc66-a2ff-4d50-a7cc-ab8c862aff45" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Validate the presence and length of the 'reports' array" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get your transactional email activity aggregated per day.]]>
+        <![CDATA[Test description: Validate the presence and length of the 'reports' array.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:105).]]>
+      </failure>
+    </testcase>
+    <testcase name="Date in each report object is in valid date format" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Statistics / Get your transactional email activity aggregated per day.]]>
+        <![CDATA[Test description: Date in each report object is in valid date format.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:105).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get all your transactional email activity (unaggregated events)" id="bcbd345f-0472-4100-bace-94757bb21c62" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Get the list of blocked or unsubscribed transactional contacts" id="ed333979-0462-4043-b8c9-45661008939f" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Unblock or resubscribe a transactional contact" id="8f0fa655-51a0-4146-908e-9d0b60194d3a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Get the list of blocked domains" id="738e463e-cb2d-4c32-a22b-0767ee14ce30" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response is an object with domains property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Domains / Get the list of blocked domains.]]>
+        <![CDATA[Test description: Response is an object with domains property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:109).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each domain in the response is a string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Blocked Domains / Get the list of blocked domains.]]>
+        <![CDATA[Test description: Each domain in the response is a string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:109).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Add a new domain to the list of blocked domains" id="42d8c08c-bc99-439e-8b28-1ab392a12d2e" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Unblock an existing domain from the list of blocked domains" id="5e2c4429-fb18-4dee-8eff-3ae885431572" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete hardbounces" id="20178004-d5b4-4668-b557-dadb661d384e" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete an SMTP transactional log" id="2d7f3cd2-1fae-4b9a-84bd-06f10a3d75e7" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Get the list of all the events for the received emails." id="edb804d6-2e0c-45f4-9a60-e43c9e821028" timestamp="2023-12-01T10:32:59.666Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response is an object with events property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Inbound Email Parsing / Get the list of all the events for the received emails..]]>
+        <![CDATA[Test description: Response is an object with events property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:114).]]>
+      </failure>
+    </testcase>
+    <testcase name="Each element in the events array has a uuid, date, sender, and recipient property" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Transactional / Inbound Email Parsing / Get the list of all the events for the received emails..]]>
+        <![CDATA[Test description: Each element in the events array has a uuid, date, sender, and recipient property.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:114).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Fetch all events history for one particular received email." id="8e4bcb1c-dbcf-4249-8bb0-7d4420c8fe36" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Retrieve inbound attachment with download token." id="876ac06b-edf7-4c7a-a9cc-2a3fd336b5ed" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / Transactional SMS / Send SMS message to a mobile number" id="095b9257-37be-427a-b657-61da5b57d7cd" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated over a period of time" id="731926ff-e3ad-424c-a38e-318d00b4c378" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated per day" id="d5874a5c-8270-4b25-87c7-a092d1a7a8e4" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get all your SMS activity (unaggregated events)" id="76ea5040-0429-4fba-831b-f47f94844913" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get all webhooks" id="49502c21-80d7-462c-8d37-ac3bb5fcd03f" timestamp="2023-12-01T10:32:59.666Z" tests="4" failures="4" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response status code is 200" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Get all webhooks.]]>
+        <![CDATA[Test description: Response status code is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:121).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate the presence and length of the 'webhooks' array" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Get all webhooks.]]>
+        <![CDATA[Test description: Validate the presence and length of the 'webhooks' array.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:121).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate that the 'url' field in each webhook object is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Get all webhooks.]]>
+        <![CDATA[Test description: Validate that the 'url' field in each webhook object is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:121).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate that the 'id' field in each webhook object is a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Get all webhooks.]]>
+        <![CDATA[Test description: Validate that the 'id' field in each webhook object is a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:4:121).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Create a webhook" id="3f87fda7-45e1-4822-b1f3-3ba39d2a992f" timestamp="2023-12-01T10:32:59.666Z" tests="5" failures="5" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Response status code is 201" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Response status code is 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has the required field - id" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Response has the required field - id.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Id is a non-negative integer" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Id is a non-negative integer.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:3:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Response time is less than 500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:4:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response body matches expected schema" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Response body matches expected schema.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:5:122).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get a webhook details" id="b1ffc81c-e650-4af9-8aaf-278a46080c0a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Update a webhook" id="c4de3e15-b2c9-4b0a-910e-a830092209db" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Delete a webhook" id="e488a36c-7e09-45f9-830a-538bff809d99" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Add Email and/or SMS credits to a specific child account" id="da4b6fc3-df8f-4eec-839d-4581af611c8c" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Remove Email and/or SMS credits from a specific child account" id="7a18e919-3678-4f1a-a265-7cdc70283411" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Associate a dedicated IP to the child" id="0673ae11-ca00-4cc1-ab39-41862bf79bd3" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Dissociate a dedicated IP to the child" id="098e32a9-171b-4049-98ae-a9c514ba5820" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Get all sender domains for a specific child account" id="929ccc8c-fb10-4bfd-a2ab-cc1f74f63b0b" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Create a domain for a child account" id="85ac3581-a35e-4349-a71c-662015050e31" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Update the sender domain of reseller's child based on the childIdentifier and domainName passed" id="d4051dfe-0fdc-4426-9d9c-4c4805f4c567" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Delete the sender domain of the reseller child based on the childIdentifier and domainName passed" id="d91798a8-48d0-4bc0-833a-0bdd81d9a8b7" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get a child account's details" id="63e8236a-e813-487c-9dc9-a48efa40db2c" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child based on the child identifier supplied" id="5ef74555-88ea-475f-9e64-ff5faae02790" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Delete a single reseller child based on the child identifier supplied" id="a07ecdf1-86d0-4824-ad96-c71694015fb0" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child account status based on the identifier supplied" id="e67974ec-5d20-4509-bda8-bed3d8e6fe50" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied" id="10342185-e638-4a15-b2e1-583ad0664791" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get session token to access Sendinblue (SSO)" id="5c946148-bb7f-424e-82c3-96fd2d6c60d0" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get the list of all children accounts" id="5d8f1a6a-7d73-4ba5-a4b3-7a3967ecc1f8" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Creates a reseller child" id="7a1d2191-f7dc-4c50-9118-b7744f3b7069" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Process / Return all the processes for your account" id="01ade08e-35b7-46d9-8481-c2b3e35fba6c" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Process / Return the informations for a process" id="f7500d7b-71e1-4f2f-8c27-e84a93fab4a1" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the details of requested master account" id="9f18f5ae-61e1-4903-a685-c02c3dacdea1" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the list of all the sub-accounts of the master account." id="75f68d21-b84c-48c8-94b9-08921b02794f" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Create a new sub-account under a master account." id="0d2db0c1-97dd-4d06-a095-0272a85afc16" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Generate SSO token to access Sendinblue" id="42bdae08-726c-4b07-97bf-e0c694377622" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get sub-account details" id="edb975c4-844e-4fcd-b1a0-917e9b8ce062" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Delete a sub-account" id="7863b63b-cabe-4cf2-b90b-7f13942fb020" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Corporate / Update sub-account plan" id="fe40757d-a4c2-48e8-8e57-b24fbac9504a" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Account data / Get your account information, plan and credits details" id="60c5aa9f-2eb0-47a8-be94-945a4f671aac" timestamp="2023-12-01T10:32:59.666Z" tests="3" failures="3" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+    <testcase name="Verify that the 'type' in each 'plan' object is a non-empty string" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Account data / Get your account information, plan and credits details.]]>
+        <![CDATA[Test description: Verify that the 'type' in each 'plan' object is a non-empty string.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:1:151).]]>
+      </failure>
+    </testcase>
+    <testcase name="Address object is present and contains expected fields" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Account data / Get your account information, plan and credits details.]]>
+        <![CDATA[Test description: Address object is present and contains expected fields.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:151).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 4c4efbd5-309d-4799-a86f-b84a0e43be6d.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Account / Account data / Get your account information, plan and credits details.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:3:151).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account / Senders / Get the list of all your senders" id="7d850c53-8f65-47ac-af84-8cdc10ae5457" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Senders / Create a new sender" id="b0acc029-fd26-4ae9-b490-8257c6789a65" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for your account" id="476db664-df20-47de-bff5-20b424878b7f" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Senders / Update a sender" id="21ed2274-c7a7-46d9-bf63-ddbccd823e60" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Senders / Delete a sender" id="a6eaea10-497b-4c35-9725-de79ec9be5df" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for a sender" id="c875bec2-54b4-4b05-9f7f-f1a4719e2e83" timestamp="2023-12-01T10:32:59.666Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND api.sendinblue.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+---
+]]></system-err>
+  </testsuite>
+</testsuites>
