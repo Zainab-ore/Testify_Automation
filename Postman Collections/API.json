@@ -22,6 +22,7 @@
 							"pm.test(\"Test for name\",function(){\r",
 							"pm.expect(jsonData[4].name).to.eql(\"Untamed\");\r",
 							"});\r",
+							"\r",
 							"pm.test(\"Test for type\",function(){\r",
 							"pm.expect(jsonData[4].type).to.eql(\"non-fiction\");\r",
 							"});\r",
@@ -41,12 +42,6 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "1823359cec89e55eaff975a3a7387c2fccee2defde767ceb211ea298889c3ef3"
-					}
-				},
 				"method": "GET",
 				"header": [],
 				"body": {
