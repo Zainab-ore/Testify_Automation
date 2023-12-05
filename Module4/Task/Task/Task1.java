@@ -1,4 +1,4 @@
-public class PrintSeveralLines {
+public class Task1 {
     public static void main(String[] args) {
         // Print several lines
         System.out.println("This is line 1.");
