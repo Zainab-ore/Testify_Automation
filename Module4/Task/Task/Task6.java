@@ -1,10 +1,8 @@
 import java.util.*;
 import java.io.*;
 
-public class Task6
-{
-    public static void main(String[] args)
-    {
+public class Task6 {
+    public static void main(String[] args) {
         //the original string
         String originalString = "DEMOCRACY";
 
@@ -21,15 +19,22 @@ public class Task6
     }
 
     // Create a function to reverse the string
-    private static String reverseString(String word) {
-        return new StringBuilder(word).reverse().toString();
+    public static String reverseString(String word) {
+        StringBuilder stringBuilder = new StringBuilder(word);
+        stringBuilder.reverse();
+
+        return stringBuilder.toString();
     }
 
     // Function to extract a specific word from a string
     private static String extractWord(String word) {
-        int startIndex = word.indexOf("EMOC");
-        int endIndex = startIndex + "EMOC".length();
-        return word.substring(startIndex, endIndex);
+        if (word.contains("COME")) {
+            return "COME";
+        } else {
+
+
+            return "invalid";
+        }
     }
 }
 
