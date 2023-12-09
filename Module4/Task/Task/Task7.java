@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 public class Task7 {
-    public static void main(String[] args) { 
+    public static void main(String[] args) {
         // Create a 2D array with 4 rows and 3 columns
         String[][] fruitArray = new String[4][3];
 

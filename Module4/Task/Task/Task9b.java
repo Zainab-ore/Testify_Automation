@@ -21,10 +21,7 @@ public class Task9b {
             System.out.println("Welcome! We are glad you are here for testify training.");
         } else {
             // Rejection message if they didn't write "Testify"
-            System.out.println("Sorry, your presence is not for testifytraining. Rejected!");
+            System.out.println("Sorry, your presence is not for testify training. Rejected!");
         }
-
-        // Close the scanner to avoid resource leaks
-        scanner.close();
     }
 }
