@@ -1,15 +1,14 @@
 public class Task3 {
     public static void main(String[] args) {
-        // Store your age in a variable
-        int DeclearedAge = 20;
+        // Store the age in a variable
 
-        // Method
         String age = "My age is ";
+        int DeclaredAge = 20;
 
 
         // Display the results
-        System.out.println(age+DeclearedAge);
-        System.out.println(age.concat(DeclearedAge+""));
+        System.out.println(age+DeclaredAge);
+        System.out.println(age.concat(DeclaredAge+""));
 
 
     }

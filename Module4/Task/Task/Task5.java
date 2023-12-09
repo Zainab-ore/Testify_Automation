@@ -3,8 +3,8 @@ public class Task5
     public static void main(String [] args)
     {
 
+        int number = 90;
 
-        for(int number=1; number<=100; number++) {
             if (number % 5 == 0 && number % 3 == 0)
             {
                 System.out.println("frizz buzz");
@@ -21,7 +21,7 @@ public class Task5
             {
                 System.out.println(number);
             }
-        }
+
 
     }
 }
