@@ -4,7 +4,7 @@ public class Task2 {
         int integerVariable = 99;
         double doubleVariable = 99.99;
         char charVariable = 'A';
-        boolean booleanVariable = false;
+        boolean booleanVariable = true;
         long longVariable = 1234567890L;
         String stringVariable = "Programming in Java!";
 

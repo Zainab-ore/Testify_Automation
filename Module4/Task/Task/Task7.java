@@ -5,12 +5,13 @@ public class Task7 {
         // Create a 2D array with 4 rows and 3 columns
         String[][] fruitArray = new String[4][3];
 
-
+        //fruit array
         fruitArray[0][0] = "Apple";
-        fruitArray[1][0] = "Banana";
-        fruitArray[2][0] = "Cashew";
-        fruitArray[3][0] = "Date";
+        fruitArray[1][1] = "Banana";
+        fruitArray[2][2] = "Cashew";
+        fruitArray[3][1] = "Date";
         System.out.println("Fruits  Column1  Column2");
+
         // Display the 2D array
         displayArray(fruitArray);
 
