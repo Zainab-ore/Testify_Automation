@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Only one of Sender ID or Sender Email can be passed for the same request."}

@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Scheduled date is not valid. It should be in standard RFC3339 format"}

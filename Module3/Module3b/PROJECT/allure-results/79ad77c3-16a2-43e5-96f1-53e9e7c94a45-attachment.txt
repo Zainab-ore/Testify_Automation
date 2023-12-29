@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Test emails cannot be sent to non-existent/blacklisted/without-contact-list users"}

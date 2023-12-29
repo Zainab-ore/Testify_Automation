@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Only one of the actions shall be passed in one request for custom contact filter"}

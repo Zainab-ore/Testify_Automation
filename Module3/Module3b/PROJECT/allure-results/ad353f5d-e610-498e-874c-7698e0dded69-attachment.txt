@@ -1,0 +1,1 @@
+{"message":"Current account is not a corporate user","code":"permission_denied"}

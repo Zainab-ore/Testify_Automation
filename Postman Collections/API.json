@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "e34cdc0f-ef5c-42c1-8596-a39bfd59b6a4",
+		"name": "Testify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all books",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
+						"exec": [
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							"pm.test(\"Test for id\",function(){\r",
+							"pm.expect(jsonData[4].id).to.eql(5);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for name\",function(){\r",
+							"pm.expect(jsonData[4].name).to.eql(\"Untamed\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for type\",function(){\r",
+							"pm.expect(jsonData[4].type).to.eql(\"non-fiction\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200 for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"postman.setNextRequest('place_orders')"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "af59d916-cd51-44c0-bae2-1c8d05ed416b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Single book",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
+						"exec": [
+							"// Removed redundant tests\r",
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							"pm.test(\"Test for id\",function(){\r",
+							"    pm.expect(jsonData.id).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for name\",function(){\r",
+							"    pm.expect(jsonData.name).to.eql(\"The Russian\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200 for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"postman.setNextRequest('Single book')"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "3a9a0fd4-3eac-4157-93f1-06afa6d116f5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "1823359cec89e55eaff975a3a7387c2fccee2defde767ceb211ea298889c3ef3"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/books/:bookId",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"books",
+						":bookId"
+					],
+					"variable": [
+						{
+							"key": "bookId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
+						"exec": [
+							"// Removed redundant tests\r",
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							"pm.test(\"Test for id\",function(){\r",
+							"    pm.expect(jsonData.bookId).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test for name\",function(){\r",
+							"    pm.expect(jsonData.customerName).to.eql(\"John\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200 for GET request\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"postman.setNextRequest(null)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "388a88c4-38b9-47c5-be19-6cc4c93032d2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "1823359cec89e55eaff975a3a7387c2fccee2defde767ceb211ea298889c3ef3"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/orders/:orderId",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "7XZTKY1EykA02cxE9xA5_"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 201 for POST request\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							"postman.setNextRequest('Get Order')"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ef998f22-5199-4dbc-8d33-27bbbbc9eaf6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "1823359cec89e55eaff975a3a7387c2fccee2defde767ceb211ea298889c3ef3"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"customerName\": \"John\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}/orders/-t-TEPj8jaKfSwAgCj5Sa"
+			},
+			"response": []
+		},
+		{
+			"name": "place_orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f20a8ea4-1407-4870-a1a7-0dd4c351246c",
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 201 for POST request\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "e67f3c71-67b8-4213-ae58-0c83c27fa434",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "1823359cec89e55eaff975a3a7387c2fccee2defde767ceb211ea298889c3ef3"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookId\": {{id}},\r\n  \"customerName\": \"John\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-books-api.glitch.me/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Generate token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0a3fdbd7-a47a-4c3e-8dd0-ccb1f99e2a43",
+						"exec": [
+							"var myData= pm.response.jsondata();\r",
+							"pm.set.environment(\"mydata\", myData.accessToken)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "105a24e2-5d2a-4540-ac8d-3756cdbd0477",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Postman\",\r\n   \"clientEmail\": \"Adedejior@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}/api-clients/"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "34fa9fb7-c8b6-44ed-b470-42be3ff24f55",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7462db7a-07fc-4dbb-946f-f7d65f0ba46f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "name",
+			"value": "The Russian",
+			"type": "string"
+		}
+	]
+}

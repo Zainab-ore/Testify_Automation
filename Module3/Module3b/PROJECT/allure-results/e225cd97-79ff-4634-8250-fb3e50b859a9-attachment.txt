@@ -1,0 +1,1 @@
+{"code":"document_not_found","message":"Campaign id does not exist"}
