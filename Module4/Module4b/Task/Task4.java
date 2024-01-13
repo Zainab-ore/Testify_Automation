@@ -21,7 +21,7 @@ public class Task4
         driver.findElement(By.xpath("//*[@id=\"dismiss-button\"]/div/span")).click();;
 
         Thread.sleep(3000);
-        //Enter UserId
+       
         driver.findElement(By.xpath("//tbody/tr[1]/td[2]/input[1]")).click();
 
         driver.findElement(By.xpath("//tbody/tr[1]/td[2]/input[1]")).sendKeys("Zainab1");
