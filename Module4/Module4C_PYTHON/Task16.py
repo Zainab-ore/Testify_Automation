@@ -13,7 +13,7 @@ print(elements)
 elements.update({"elementFive": "Boron", "elementSix": "carbon"})
 print("Update:", elements)
 
-# Other List Functions
+# Other List Functions.
 # Keys
 elements_keys = elements.keys()
 print("Keys:", elements_keys)
@@ -34,5 +34,5 @@ print(elements_copy)
 elements_copy.clear()
 print("Clear:", elements_copy )
 
-#Print the first original elements
+#Print the first original elements.
 print(elements)

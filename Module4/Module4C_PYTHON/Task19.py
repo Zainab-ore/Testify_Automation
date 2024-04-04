@@ -5,7 +5,7 @@ class Human:
 
 
     def get_description(self):
-        print("This is human")
+        print("This is a human")
 
     def number_of_legs(self):
         return self.leg_count

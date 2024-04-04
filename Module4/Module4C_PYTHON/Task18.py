@@ -7,7 +7,7 @@ class Human:
         self.can_walk = True
 
 
-# Optionally you can instantiate the class and prints out the leg_count and can_walk attributes
+# Optionally you can instantiate the class and prints out the leg_count and can_walk attributes.
 human_sample = Human()
 
 print("Infor Output:" , human_sample.leg_count, " and ", human_sample.can_walk)
