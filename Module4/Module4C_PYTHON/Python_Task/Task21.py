@@ -7,7 +7,7 @@ Create another class called Woman that extends Human
 In the class, Man create the method get_gender() which should return "man"
 In the class, Woman create the method get_gender() which should return "woman"
 Instantiate the Man and Woman classes
-Print out the value of get_gender() from the Man and Woman object instances
+Print out the value of get_gender() from the Man and Woman object instances.
 """
 
 class Human:
